@@ -6,7 +6,7 @@ $("#date1").html(k);
 //  Klikkaa ruksia piilotaakseen tehtävän
 $("ul").on("click","span", function(e){
   e.stopPropagation(); 
-  $(this).parent().hide();
+  $(this).parent().fadeOut("slow");
 })
 
 
