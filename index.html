@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <title>To Do List</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Lisätään tarvittavat bootstrap kompponentit -->
+ 
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+  <!-- linkitetään style tiedosto -->
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Luon bootstrapin kautta containerin, jonka väriteema on tumma. -->
+  <div class="container rounded p-3 my-3 bg-dark text-white" id="container">
+   <br>
+   <div id="newsFeed" clss="text-left">
+    <p id = news></p>
+    <a href="https://www.is.fi/paakirjoitus/" target="_blank" id = link>Muut pääkirjoitukset</a>
+  </div>
+    
+<!-- Luon uuden divin date containerin sisälle. -->
+    <div id="date" class="text-left">
+          <h1 id="date1"></h1>
+        </div>
+
+<!-- Luon uuden listan, joka näyttää tulevaisuudessa tehtävälistan -->
+    <div id="list">
+    <ul id="myUL">
+    </ul>
+    </div>
+
+<!-- Luon alas uuden headerin, jolla saan voin kirjoittaa tehtävän ja lisätä se painamalla näppäintä -->
+<div id="myDIV" class="header">
+  <input type="text" id="myInput" placeholder="Uusi tehtävä päivälle">
+  <span onclick="newList()" class="addBtn"><i class="fa fa-plus" style="font-size:22px"></i></span>
+</div>
+  </div>
+<!-- Linkitän javascriptin-->
+<script src="myscript.js"></script>
+
+  </body>
+  </html>
