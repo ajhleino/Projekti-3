@@ -38,7 +38,7 @@ var span = $('<span/>').attr('class', 'close');
   //poistetaan listalta
   for (i = 0; i < close.length; i++) {
     $(close[i]).click ( function() {
-      $(this).closest("li").hide();
+      $(this).closest("li").fadeOut("slow");
     }
   );}
 });
